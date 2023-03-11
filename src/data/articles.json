@@ -1,0 +1,12 @@
+{
+  "articles": [
+    {
+      "platform": "manojuppala.com",
+      "platform_link": "https://manojuppala.com/",
+      "date": "18-8-2019",
+      "title": "Linux is calm and peaceful",
+      "content": "I have been using linux since the last 3 years. I've used ubuntu for a year and then switched to linux mint. linux is really calm and peaceful.",
+      "tags": ["linux", "tech"]
+    }
+  ]
+}

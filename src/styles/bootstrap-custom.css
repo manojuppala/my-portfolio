@@ -1,0 +1,113 @@
+@import "./main.css";
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+.bg-dark {
+  background-color: var(--background) !important;
+}
+.text-light {
+  color: var(--text-color) !important;
+}
+.card {
+  background-color: var(--background) !important;
+}
+.navbar {
+  margin-bottom: 10px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--nav);
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+  margin-bottom: 6px !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--nav);
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+  margin-bottom: 6px !important;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: var(--secondary-text-color) !important;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  color: var(--secondary-text-color) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--nav-hover);
+  background: var(--nav-bg-hover);
+  border-radius: 6px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--nav-hover);
+  background: var(--nav-bg-hover);
+  border-radius: 6px;
+}
+.nav-item.active {
+  border-bottom: 2px solid var(--nav-bottom) !important;
+}
+.nav-item {
+  border-bottom: 2px solid var(--background) !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check {
+  width: unset !important;
+  margin: auto !important;
+  padding: 0px !important;
+}
+.form-check-input {
+  margin-left: -1.25rem !important;
+}
+.form-check-input:focus {
+  box-shadow: unset !important;
+}
+
+/* pagination */
+.pagination > li > a {
+  border-color: var(--border);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: var(--pagination);
+  border-color: var(--border);
+  background-color: var(--background) !important;
+  box-shadow: none;
+}
+
+.page-item.active :hover,
+.page-item.active :focus {
+  background-color: var(--primary) !important;
+}
+
+.page-item.disabled .page-link {
+  border-color: var(--border);
+}
+
+/* search box */
+input.input-query {
+  border-color: var(--border);
+}
+
+textarea.input-query {
+  border-color: var(--border);
+}
+
+.form-control:focus {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.rounded-circle {
+  width: 40px;
+}
