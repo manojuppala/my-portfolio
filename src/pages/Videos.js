@@ -6,13 +6,11 @@ function Videos() {
     <React.Fragment>
       <p className="h5 text-primary">Videos</p>
       <p className="text-light">
-        For thousands of years, people have known that the best way to
-        understand a concept is to explain it to someone else. So i make
-        tutorials on <a href="https://www.youtube.com/thedataguy">YouTube</a>{" "}
-        and <a href="https://odysee.com/@thedataguy:7">Odysee</a>. Most of my
-        videos concentrate on programming, CS concepts and softwares i use. We
-        make computer science tutorials that are crafted with dedication and
-        passion. make sure to subscribe if interested in our content.
+        I used to make programming tutorials on{" "}
+        <a href="https://www.youtube.com/@manojuppala">YouTube</a> and{" "}
+        <a href="https://odysee.com/@thedataguy:7">Odysee</a>, But for some
+        reason i don't anymore. Check out the videos on my channel (pardon my
+        video editing skills). I am open for suggestions and video ideas.
       </p>
       {/* <Video id="4pGz01s_OZs" /> */}
     </React.Fragment>

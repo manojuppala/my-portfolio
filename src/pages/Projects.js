@@ -3,11 +3,25 @@ import "../styles/projects.css";
 
 const data = [
   {
+    title: "Tasklist-cli",
+    tools: "nodejs,typescript",
+    desc: "tasklist-cli is a simple and elegant command line application to manage tasks and todo-lists.",
+    github: "https://github.com/manojuppala/tasklist-cli",
+    image: "tasklist-cli.jpg",
+  },
+  {
     title: "Sorting algorithm visualizer",
     tools: "python",
     desc: "A python GUI application to visualize how various sorting algorithms work.",
     github: "https://github.com/manojuppala/sorting-algorithm-visualizer",
     image: "algovisualizer.png",
+  },
+  {
+    title: "YouTube downloader",
+    tools: "python",
+    desc: "A python GUI application to download youtube videos,thumbnails and video descriptions.",
+    github: "https://github.com/manojuppala/pytube-dl",
+    image: "ytdownloader.png",
   },
 ];
 
@@ -38,7 +52,10 @@ const Projects = () => {
                 <p className="project-skills">
                   <img
                     src={`https://skillicons.dev/icons?i=${proj.tools}`}
-                    style={{ width: "100%", maxWidth: "2rem" }}
+                    style={{
+                      width: "100%",
+                      maxWidth: `${proj.tools.split(",").length * 1.5}` + "rem",
+                    }}
                   />
                 </p>
                 <p className="card-text text-light">{proj.desc}</p>

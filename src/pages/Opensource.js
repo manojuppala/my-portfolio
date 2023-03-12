@@ -7,6 +7,12 @@ const Opensource = () => {
       <p className="h5 text-primary" id="opensource">
         Open-source
       </p>
+      <p className="text-light">
+        Using Opensource software makes me happy. I love to contribute to
+        valuable and accessible open source projects myself. An opensource
+        project i have authored gained some recognition check it out{" "}
+        <a href="https://github.com/manojuppala/tasklist-cli">tasklist-cli</a>.
+      </p>
       <div className="card-deck" style={{ justifyContent: "center" }}>
         <a
           href="https://github.com/manojuppala"

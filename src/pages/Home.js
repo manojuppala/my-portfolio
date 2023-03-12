@@ -18,21 +18,25 @@ const Home = () => {
         About
       </p>
       <p className="text-light">
-        Hi i'm Manoj Uppala. A Open Source enthusiast and budding data scientist
-        with deep interest in natural language processing, computer vision and
-        machine learning. I am currently pursuing bachelors at Lovely
-        professional university majoring in Computer science and Data science as
-        my minor.
+        Hi there i'm Manoj Uppala. A frontend engineer and an aspiring fullstack
+        developer. An Open Source enthusiast with interests in web dev and data
+        science. I constantly find ways to challenge myself, learn new things
+        and experiment with different tools.
       </p>
 
       <Code
-        snippet={`# this is hello world! 
-int main(){
-cout<<"hello world!";
-return 0;
-}`}
-        lang="c"
+        snippet={`things = ["good thing","bad thing","nothing"]
+hope = "good thing"
+if(hope == bestof(things)):
+  print('no good thing ever dies')
+# by stephen king`}
+        lang="python"
       />
+      <p className="text-light">
+        😕 If you are confused the above code means this quote "hope is a good
+        thing, maybe the best of things, and no good thing ever dies" - stephen
+        king
+      </p>
     </React.Fragment>
   );
 };
