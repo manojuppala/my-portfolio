@@ -23,7 +23,7 @@ const Home = () => {
         make computer science tutorials that are crafted with dedication and
         passion. make sure to subscribe if interested in our content.
       </p>
-      <Video id="4pGz01s_OZs" />
+      {/* <Video id="4pGz01s_OZs" /> */}
       <p className="h5 text-primary">Dotfiles</p>
       <p className="text-light">
         My installable GNU/Linux dotfiles running XMonad on Linux Mint. These

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Navbar, Footer } from "./components";
-import { Home, Opensource } from "./pages";
+import { Home, Opensource, Contact, Projects, Skills } from "./pages";
 import "highlight.js/styles/github-dark-dimmed.css";
 import hljs from "highlight.js";
 
@@ -13,7 +13,10 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Home />
+      <Skills />
+      <Projects />
       <Opensource />
+      <Contact />
       <Footer />
     </React.Fragment>
   );

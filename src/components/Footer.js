@@ -40,7 +40,8 @@ const Footer = () => {
         </div>
         <span className="text-muted meta-data">
           {" "}
-          © 2022 Copyright: <a href="https://manojuppala.ml/">manojuppala.com</a>
+          © 2023 Copyright:{" "}
+          <a href="https://manojuppala.ml/">manojuppala.com</a>
         </span>
       </div>
     </footer>
