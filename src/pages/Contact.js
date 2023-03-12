@@ -4,7 +4,9 @@ import { Input } from "../components/atoms";
 function Contact() {
   return (
     <React.Fragment>
-      <p className="h5 text-primary">Contact</p>
+      <p className="h5 text-primary" id="contact">
+        Contact
+      </p>
 
       <Input type="text" id="name" placeholder="What's your name?" />
       <Input type="email" id="email" placeholder="What's your email?" />

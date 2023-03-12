@@ -14,29 +14,34 @@ const data = [
 const Projects = () => {
   return (
     <React.Fragment>
-      <p className="h5 text-primary">Projects</p>
-      <div class="card-deck">
-        {data.map((proj) => {
+      <p className="h5 text-primary" id="projects">
+        Projects
+      </p>
+      <div className="card-deck">
+        {data.map((proj, id) => {
           return (
-            <div class="card text-white bg-dark mb-3 cards-fixed-width card-border">
-              <div class="inner">
+            <div
+              key={id}
+              className="card text-white bg-dark mb-3 cards-fixed-width card-border"
+            >
+              <div className="inner">
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={`https://manoj-dev-portfolio.s3.amazonaws.com/projects/${proj.image}`}
                   alt="Card image cap"
                 />
               </div>
-              <div class="card-body">
-                <h5 class="card-title text-light">
+              <div className="card-body">
+                <h5 className="card-title text-light">
                   <b>{proj.title}</b>
                 </h5>
-                <p>
+                <p className="project-skills">
                   <img
                     src={`https://skillicons.dev/icons?i=${proj.tools}`}
                     style={{ width: "100%", maxWidth: "2rem" }}
                   />
                 </p>
-                <p class="card-text text-light">{proj.desc}</p>
+                <p className="card-text text-light">{proj.desc}</p>
                 <div>
                   <a
                     href={proj.github}

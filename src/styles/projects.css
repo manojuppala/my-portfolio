@@ -28,3 +28,7 @@
 .card {
   border-radius: 6px;
 }
+
+.project-skills {
+  margin-bottom: 0px !important;
+}

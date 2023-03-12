@@ -24,17 +24,26 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav mx-auto">
           <li className={router.pathname === "/" ? activeClass : inActiveClass}>
-            <a className="nav-link h5" href="/">
+            <a className="nav-link h5" href="#top">
               Home
             </a>
           </li>
           <li
             className={
-              router.pathname === "/articles" ? activeClass : inActiveClass
+              router.pathname === "/about" ? activeClass : inActiveClass
             }
           >
-            <a className="nav-link h5" href="/articles">
-              Articles
+            <a className="nav-link h5" href="#about">
+              About
+            </a>
+          </li>
+          <li
+            className={
+              router.pathname === "/skills" ? activeClass : inActiveClass
+            }
+          >
+            <a className="nav-link h5" href="#skills">
+              Skills
             </a>
           </li>
           <li
@@ -42,7 +51,7 @@ const Navbar = () => {
               router.pathname === "/projects" ? activeClass : inActiveClass
             }
           >
-            <a className="nav-link h5" href="/projects">
+            <a className="nav-link h5" href="#projects">
               Projects
             </a>
           </li>
@@ -51,8 +60,26 @@ const Navbar = () => {
               router.pathname === "/opensource" ? activeClass : inActiveClass
             }
           >
-            <a className="nav-link h5" href="/opensource">
+            <a className="nav-link h5" href="#opensource">
               Open-source
+            </a>
+          </li>
+          <li
+            className={
+              router.pathname === "/opensource" ? activeClass : inActiveClass
+            }
+          >
+            <a className="nav-link h5" href="#resume">
+              Resume
+            </a>
+          </li>
+          <li
+            className={
+              router.pathname === "/opensource" ? activeClass : inActiveClass
+            }
+          >
+            <a className="nav-link h5" href="#contact">
+              Contact
             </a>
           </li>
         </ul>
