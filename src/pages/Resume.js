@@ -1,5 +1,4 @@
 import React from "react";
-import { Input } from "../components/atoms";
 
 function Resume() {
   return (
@@ -9,9 +8,11 @@ function Resume() {
       </p>
 
       <p align="center">
-        <button type="button" className="btn btn-primary">
-          Download
-        </button>
+        <a href="https://github.com/manojuppala/Manoj-Resume/blob/main/manoj_resume.pdf">
+          <button type="button" className="btn btn-primary">
+            Download
+          </button>
+        </a>
       </p>
       <p align="center">
         <img
