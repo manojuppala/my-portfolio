@@ -28,6 +28,7 @@ function App() {
       <Opensource />
       <Dotfiles />
       <Resume />
+      <Contact />
       <Footer />
     </React.Fragment>
   );

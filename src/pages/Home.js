@@ -1,15 +1,17 @@
 import React from "react";
-import { Video, Code } from "../components";
+import { Code, Image } from "../components";
 
 const Home = () => {
   return (
     <React.Fragment>
       <p align="center">
-        <img
-          src={`https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg`}
-          alt="Sunset image"
-          style={{ width: "100%", maxWidth: "30rem", borderRadius: "5px" }}
-        />
+        <div className="frame">
+          <Image
+            src={`https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg`}
+            alt="Sunset image"
+            style={{ width: "100%", maxWidth: "30rem", borderRadius: "5px" }}
+          />
+        </div>
       </p>
       <blockquote>
         This is an image of a sunset clicked by me. I thought it looked cool.
