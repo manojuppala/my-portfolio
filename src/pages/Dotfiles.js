@@ -1,8 +1,9 @@
-import React from "react";
+import { Fragment } from "react";
+import { Image } from "../components";
 
 function Dotfiles() {
   return (
-    <React.Fragment>
+    <Fragment>
       <p className="h5 text-primary">Dotfiles</p>
       <p className="text-light">
         My installable GNU/Linux dotfiles. These dotfiles are my personal config
@@ -15,13 +16,13 @@ function Dotfiles() {
         .
       </p>
       <p align="center">
-        <img
+        <Image
           src="https://manoj-dev-portfolio.s3.amazonaws.com/dotfiles/desktop.png"
           alt="manoj resume"
           style={{ width: "100%", maxWidth: "30rem", borderRadius: "5px" }}
         />
       </p>
-    </React.Fragment>
+    </Fragment>
   );
 }
 

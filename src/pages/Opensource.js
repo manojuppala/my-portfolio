@@ -1,9 +1,8 @@
-import React from "react";
-import { useDocumentTitle } from "../utils";
+import { Fragment } from "react";
 
 const Opensource = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <p className="h5 text-primary" id="opensource">
         Open-source
       </p>
@@ -39,7 +38,7 @@ const Opensource = () => {
           />
         </a>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

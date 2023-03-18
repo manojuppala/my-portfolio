@@ -1,8 +1,9 @@
-import React from "react";
+import { Fragment } from "react";
+import { Image } from "../components";
 
 function Resume() {
   return (
-    <React.Fragment>
+    <Fragment>
       <p className="h5 text-primary" id="resume">
         Resume
       </p>
@@ -15,7 +16,7 @@ function Resume() {
         </a>
       </p>
       <p align="center">
-        <img
+        <Image
           src={`https://manoj-dev-portfolio.s3.amazonaws.com/resume/manoj_resume.jpg`}
           alt="manoj resume"
           style={{ width: "100%", maxWidth: "30rem", borderRadius: "5px" }}
@@ -25,7 +26,7 @@ function Resume() {
         My resume is written in LaTeX. You can find the template{" "}
         <a href="https://github.com/manojuppala/Manoj-Resume">here</a>.
       </p>
-    </React.Fragment>
+    </Fragment>
   );
 }
 

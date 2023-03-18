@@ -8,15 +8,15 @@ function Contact() {
         Contact
       </p>
       <div className="card text-white bg-dark mb-3 contact-card-width card-border anchor-div p-2">
-        <label for="name" className="text-light">
+        <label htmlFor="name" className="text-light">
           Enter your name:
         </label>
         <Input type="text" id="name" placeholder="What's your name?" />
-        <label for="email" className="text-light">
+        <label htmlFor="email" className="text-light">
           Enter your email:
         </label>
         <Input type="email" id="email" placeholder="What's your email?" />
-        <label for="message" className="text-light">
+        <label htmlFor="message" className="text-light">
           Enter the message:
         </label>
         <textarea

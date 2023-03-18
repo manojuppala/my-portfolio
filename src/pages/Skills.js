@@ -1,8 +1,9 @@
-import React from "react";
+import { Fragment } from "react";
+import { Image } from "../components";
 
 const Skills = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <p className="h5 text-primary" id="skills">
         Skills
       </p>
@@ -12,12 +13,12 @@ const Skills = () => {
         mention those here because i don't considered myself skilled at them.
       </blockquote>
       <p>
-        <img
+        <Image
           src="https://skillicons.dev/icons?i=javascript,typescript,python,react,graphql,nextjs,materialui,postgres,postman,git,latex,neovim,vscode,md,bash,linux,html,css"
           style={{ width: "100%", maxWidth: "45rem" }}
         />
       </p>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

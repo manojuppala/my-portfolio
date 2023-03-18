@@ -1,4 +1,5 @@
-import React from "react";
+import { Fragment } from "react";
+import { Image } from "../components";
 import "../styles/projects.css";
 
 const data = [
@@ -27,7 +28,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <p className="h5 text-primary" id="projects">
         Projects
       </p>
@@ -39,7 +40,7 @@ const Projects = () => {
               className="card text-white bg-dark mb-3 cards-fixed-width card-border"
             >
               <div className="inner">
-                <img
+                <Image
                   className="card-img-top"
                   src={`https://manoj-dev-portfolio.s3.amazonaws.com/projects/${proj.image}`}
                   alt="Card image cap"
@@ -82,7 +83,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
