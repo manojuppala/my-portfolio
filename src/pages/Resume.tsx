@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Image } from "../components";
+import { Image, Link } from "../components";
 
 function Resume() {
   return (
@@ -8,23 +8,23 @@ function Resume() {
         Resume
       </p>
 
-      <p align="center">
-        <a href="https://github.com/manojuppala/Manoj-Resume/blob/main/manoj_resume.pdf">
+      <p style={{ textAlign: "center" }}>
+        <Link href="https://github.com/manojuppala/Manoj-Resume/blob/main/manoj_resume.pdf">
           <button type="button" className="btn btn-primary">
             Download
           </button>
-        </a>
+        </Link>
       </p>
-      <p align="center">
+      <p style={{ textAlign: "center" }}>
         <Image
           src={`https://manoj-dev-portfolio.s3.amazonaws.com/resume/manoj_resume.jpg`}
           alt="manoj resume"
-          style={{ width: "100%", maxWidth: "30rem", borderRadius: "5px" }}
+          className="resume"
         />
       </p>
       <p className="text-light">
         My resume is written in LaTeX. You can find the template{" "}
-        <a href="https://github.com/manojuppala/Manoj-Resume">here</a>.
+        <Link href="https://github.com/manojuppala/Manoj-Resume">here</Link>.
       </p>
     </Fragment>
   );

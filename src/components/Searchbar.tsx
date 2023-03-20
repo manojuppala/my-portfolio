@@ -1,5 +1,3 @@
-import React from "react";
-
 const Searchbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark searchbar">

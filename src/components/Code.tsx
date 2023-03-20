@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const Code = ({ snippet, lang }) => {
+const Code = ({ snippet, lang }: { snippet: string; lang: string }) => {
   const [btnText, setBtnText] = useState("Copy");
   const codeClass = lang ? `language-${lang} code-snippet` : `code-snippet`;
-  const copytext = (text) => {
+  const copytext = (text: string) => {
     if (btnText !== "Copied!") {
       setBtnText("Copied!");
       navigator.clipboard.writeText(text);

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Input } from "../components/atoms";
 
 function Contact() {
@@ -23,11 +23,11 @@ function Contact() {
           className="form-control text-light bg-dark input-query mb-3"
           id="message"
           name="message"
-          rows="4"
-          cols="50"
+          rows={4}
+          cols={50}
           placeholder="What do you want to say?"
         />
-        <p align="center">
+        <p style={{ textAlign: "center" }}>
           <button type="button" className="btn btn-primary btn-sm">
             Submit
           </button>

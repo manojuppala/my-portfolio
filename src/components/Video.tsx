@@ -1,6 +1,4 @@
-import React from "react";
-
-const Video = ({ id }) => {
+const Video = ({ id }: { id: string }) => {
   return (
     <div
       className="embed-responsive embed-responsive-16by9"

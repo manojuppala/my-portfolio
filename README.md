@@ -4,4 +4,4 @@ This is my react single page portfolio website at [manojuppala.com](https://mano
 
 - static assets are stored in a s3 bucket.
 
-[![My Skills](https://skillicons.dev/icons?i=react,javascript,netlify,aws)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,netlify,aws)](https://skillicons.dev)

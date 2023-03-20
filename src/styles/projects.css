@@ -37,3 +37,20 @@
 .project-skills {
   margin-bottom: 0px !important;
 }
+
+.skills {
+  width: 100%;
+  max-width: 45rem;
+}
+
+.resume {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 5px;
+}
+
+.home-img {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 5px;
+}
