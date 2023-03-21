@@ -41,16 +41,12 @@
 .skills {
   width: 100%;
   max-width: 45rem;
-}
-
-.resume {
-  width: 100%;
-  max-width: 30rem;
-  border-radius: 5px;
+  margin-bottom: 16px;
 }
 
 .home-img {
   width: 100%;
   max-width: 30rem;
   border-radius: 5px;
+  margin-bottom: 16px;
 }

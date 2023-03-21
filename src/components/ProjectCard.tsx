@@ -1,14 +1,12 @@
 import { Image, Link } from "./atoms";
 
 const ProjectCard = ({
-  id,
   image,
   title,
   skills,
   desc,
   github,
 }: {
-  id: number;
   image?: string;
   title?: string;
   skills?: string;
@@ -17,7 +15,7 @@ const ProjectCard = ({
 }) => {
   const skillCount = skills ? skills.split(",")?.length * 1.5 : 0;
   return (
-    <div key={id} className="card text-white bg-dark mb-3 cards-fixed-width card-border">
+    <div className="card text-white bg-dark mb-3 cards-fixed-width card-border">
       <div className="inner">
         <Image
           className="card-img-top"

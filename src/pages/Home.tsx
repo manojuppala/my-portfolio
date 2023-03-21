@@ -5,13 +5,12 @@ const Home = (): JSX.Element => {
   return (
     <Fragment>
       {" "}
-      <p style={{ textAlign: "center" }}>
-        <Image
-          src={`https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg`}
-          alt="Sunset image"
-          className="home-img"
-        />
-      </p>
+      <Image
+        src={`https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg`}
+        alt="Sunset image"
+        className="home-img"
+        center
+      />
       <blockquote>This is an image of a sunset clicked by me. I thought it looked cool.</blockquote>
       <p className="h5 text-primary" id="about">
         About

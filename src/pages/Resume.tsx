@@ -15,13 +15,12 @@ function Resume() {
           </button>
         </Link>
       </p>
-      <p style={{ textAlign: "center" }}>
-        <Image
-          src={`https://manoj-dev-portfolio.s3.amazonaws.com/resume/manoj_resume.jpg`}
-          alt="manoj resume"
-          className="resume"
-        />
-      </p>
+      <Image
+        src={`https://manoj-dev-portfolio.s3.amazonaws.com/resume/manoj_resume.jpg`}
+        alt="manoj resume"
+        className="home-img"
+        center
+      />
       <p className="text-light">
         My resume is written in LaTeX. You can find the template{" "}
         <Link href="https://github.com/manojuppala/Manoj-Resume">here</Link>.

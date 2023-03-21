@@ -12,13 +12,13 @@ const Dotfiles = (): JSX.Element => {
         quickly access them to install. For more info and installing dotfiles whithout any chaos
         follow this <Link href="https://github.com/manojuppala/dotfiles">Installation guide</Link>.
       </p>
-      <p style={{ textAlign: "center" }}>
-        <Image
-          src="https://manoj-dev-portfolio.s3.amazonaws.com/dotfiles/desktop.png"
-          alt="manoj resume"
-          className="home-img"
-        />
-      </p>
+
+      <Image
+        src="https://manoj-dev-portfolio.s3.amazonaws.com/dotfiles/desktop.png"
+        alt="manoj resume"
+        className="home-img"
+        center
+      />
     </React.Fragment>
   );
 };

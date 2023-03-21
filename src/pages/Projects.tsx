@@ -33,7 +33,7 @@ const Projects = () => {
       </p>
       <div className="card-deck">
         {data.map((proj, id) => {
-          return <ProjectCard id={id} {...proj} />;
+          return <ProjectCard key={id} {...proj} />;
         })}
       </div>
     </Fragment>
