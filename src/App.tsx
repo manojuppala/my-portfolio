@@ -3,6 +3,7 @@ import { Navbar, Footer } from "./components";
 import { Home, Opensource, Contact, Projects, Skills, Videos, Dotfiles, Resume } from "./pages";
 import "highlight.js/styles/github-dark-dimmed.css";
 import hljs from "highlight.js";
+import config from "./config.json";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
       <Dotfiles />
       <Resume />
       <Contact />
-      <Footer />
+      <Footer footerObj={config?.footer} />
     </React.Fragment>
   );
 }

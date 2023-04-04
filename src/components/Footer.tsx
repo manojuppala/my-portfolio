@@ -1,28 +1,44 @@
 import { Link } from "./atoms";
 
-const Footer = () => {
-  const socials = [
-    { name: "github", link: "https://github.com/manojuppala" },
-    { name: "linkedin", link: "https://linkedin.com/in/manojuppala/" },
-    { name: "youtube", link: "https://youtube.com/thedataguy" },
-    { name: "stack-overflow", link: "https://stackoverflow.com/users/11874811/manoj" },
-  ];
+type FooterType = {
+  socials?: {
+    github?: string;
+    linkedin?: string;
+    youtube?: string;
+    stackoverflow?: string;
+  };
+  copyright?: string;
+};
+
+const Footer = ({ footerObj }: { footerObj: FooterType }) => {
+  const socials = footerObj?.socials ?? {};
+  const copyright = footerObj?.copyright;
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-copyright text-center text-secondary py-3">
-        <div className="container text-center">
-          {socials.map(({ name, link }, id) => {
-            return (
-              <Link href={link} key={id} className="h5 pr-3 text-secondary">
-                <i className={`fa fa-${name} fa-social`}></i>
-              </Link>
-            );
-          })}
-        </div>
-        <span className="text-muted meta-data">
-          {" "}
-          © 2023 Copyright: <a href="https://manojuppala.com/">manojuppala.com</a>
-        </span>
+        {Object.keys(socials).length !== 0 ? (
+          <div className="container text-center">
+            {Object.keys(socials).map((social, id) => {
+              return (
+                <Link
+                  href={socials[social as keyof typeof socials]}
+                  key={id}
+                  className="h5 pr-3 text-secondary"
+                >
+                  <i className={`fa fa-${social} fa-social`}></i>
+                </Link>
+              );
+            })}
+          </div>
+        ) : null}
+        {copyright ? (
+          <span className="text-muted meta-data">
+            {" "}
+            © {year} Copyright: <a href={"https://" + copyright}>{copyright}</a>
+          </span>
+        ) : null}
       </div>
     </footer>
   );
