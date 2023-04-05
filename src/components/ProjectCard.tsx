@@ -1,36 +1,28 @@
 import { Image, Link } from "./atoms";
 
-const ProjectCard = ({
-  image,
-  title,
-  skills,
-  desc,
-  github,
-}: {
-  image?: string;
+export type ProjectType = {
+  img: string;
   title?: string;
-  skills?: string;
+  skills?: string[];
   desc?: string;
   github?: string;
-}) => {
-  const skillCount = skills ? skills.split(",")?.length * 1.5 : 0;
+};
+
+const ProjectCard = ({ proj }: { proj: ProjectType }) => {
+  const skillCount = proj.skills ? proj.skills?.length * 1.5 : 0;
   return (
     <div className="card text-white bg-dark mb-3 cards-fixed-width card-border">
       <div className="inner">
-        <Image
-          className="card-img-top"
-          src={`https://manoj-dev-portfolio.s3.amazonaws.com/projects/${image}`}
-          alt="Card image cap"
-        />
+        <Image className="card-img-top" src={proj?.img} alt="Card image cap" />
       </div>
       <div className="card-body">
         <h5 className="card-title text-light">
-          <b>{title}</b>
+          <b>{proj?.title}</b>
         </h5>
-        {skills ? (
+        {proj?.skills ? (
           <p className="project-skills">
             <img
-              src={`https://skillicons.dev/icons?i=${skills}`}
+              src={`https://skillicons.dev/icons?i=${proj.skills.join(",")}`}
               alt="project"
               style={{
                 width: "100%",
@@ -39,12 +31,12 @@ const ProjectCard = ({
             />
           </p>
         ) : null}
-        <p className="card-text text-light">{desc}</p>
+        <p className="card-text text-light">{proj?.desc}</p>
         <div>
-          <Link href={github} className="h4 pr-3 text-secondary">
+          <Link href={proj?.github} className="h4 pr-3 text-secondary">
             <i className="fa fa-github fa-social"></i>
           </Link>
-          <Link href={github} className="h4 pr-3 text-secondary">
+          <Link href={proj?.github} className="h4 pr-3 text-secondary">
             <i className="fa fa-eye fa-social"></i>
           </Link>
         </div>

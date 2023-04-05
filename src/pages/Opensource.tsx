@@ -4,7 +4,7 @@ import { Link } from "../components";
 const Opensource = () => {
   return (
     <Fragment>
-      <p className="h5 text-primary" id="opensource">
+      <p className="h5 text-primary" id="open-source">
         Open-source
       </p>
       <p className="text-light">

@@ -1,4 +1,60 @@
 {
+  "navbar": { "sections": ["Home", "About", "Skills", "Projects", "Open-source", "Resume"] },
+  "body": {
+    "home": {
+      "img": {
+        "src": "https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg",
+        "desc": "This is an image of a sunset clicked by me. I thought it looked cool."
+      }
+    },
+    "skills": {
+      "list": [
+        "javascript",
+        "typescript",
+        "python",
+        "react",
+        "graphql",
+        "nextjs",
+        "materialui",
+        "postgres",
+        "postman",
+        "git",
+        "latex",
+        "neovim",
+        "vscode",
+        "md",
+        "bash",
+        "linux",
+        "html",
+        "css"
+      ]
+    },
+    "projects": {
+      "list": [
+        {
+          "title": "Tasklist-cli",
+          "skills": ["nodejs", "typescript"],
+          "desc": "tasklist-cli is a simple and elegant command line application to manage tasks and todo-lists.",
+          "github": "https://github.com/manojuppala/tasklist-cli",
+          "img": "https://manoj-dev-portfolio.s3.amazonaws.com/projects/tasklist-cli.jpg"
+        },
+        {
+          "title": "Sorting algorithm visualizer",
+          "skills": ["python"],
+          "desc": "A python GUI application to visualize how various sorting algorithms work.",
+          "github": "https://github.com/manojuppala/sorting-algorithm-visualizer",
+          "img": "https://manoj-dev-portfolio.s3.amazonaws.com/projects/algovisualizer.png"
+        },
+        {
+          "title": "YouTube downloader",
+          "skills": ["python"],
+          "desc": "A python GUI application to download youtube videos,thumbnails and video descriptions.",
+          "github": "https://github.com/manojuppala/pytube-dl",
+          "img": "https://manoj-dev-portfolio.s3.amazonaws.com/projects/ytdownloader.png"
+        }
+      ]
+    }
+  },
   "footer": {
     "socials": {
       "github": "https://github.com/manojuppala",

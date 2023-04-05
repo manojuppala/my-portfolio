@@ -1,17 +1,23 @@
 import { Fragment } from "react";
 import { Code, Image } from "../components";
 
-const Home = (): JSX.Element => {
+type HomeType = {
+  img?: {
+    src: string;
+    desc?: string;
+  };
+};
+
+const Home = ({ homeObj }: { homeObj: HomeType }): JSX.Element => {
+  const img = homeObj?.img;
   return (
     <Fragment>
-      {" "}
-      <Image
-        src={`https://manoj-dev-portfolio.s3.amazonaws.com/sunset_image.jpg`}
-        alt="Sunset image"
-        className="home-img"
-        center
-      />
-      <blockquote>This is an image of a sunset clicked by me. I thought it looked cool.</blockquote>
+      {img?.src !== "" ? (
+        <>
+          <Image src={img?.src!} alt="Sunset image" className="home-img" center />
+          <blockquote>{img?.desc}</blockquote>
+        </>
+      ) : null}
       <p className="h5 text-primary" id="about">
         About
       </p>

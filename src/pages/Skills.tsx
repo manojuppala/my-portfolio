@@ -1,7 +1,12 @@
 import { Fragment } from "react";
 import { Image } from "../components";
 
-const Skills = () => {
+type SkillType = {
+  list?: string[];
+};
+
+const Skills = ({ skillsObj }: { skillsObj: SkillType }) => {
+  const skills = skillsObj?.list;
   return (
     <Fragment>
       <p className="h5 text-primary" id="skills">
@@ -12,10 +17,7 @@ const Skills = () => {
         have worked with other frameworks but didn't mention those here because i don't considered
         myself skilled at them.
       </blockquote>
-      <Image
-        src="https://skillicons.dev/icons?i=javascript,typescript,python,react,graphql,nextjs,materialui,postgres,postman,git,latex,neovim,vscode,md,bash,linux,html,css"
-        className="skills"
-      />
+      <Image src={`https://skillicons.dev/icons?i=${skills?.join(",")}`} className="skills" />
     </Fragment>
   );
 };
